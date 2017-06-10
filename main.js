@@ -5,11 +5,9 @@ import { createStore } from 'redux';
 import allReducers from '~/js/reducers/index.js';
 import { Provider } from 'react-redux';
 
-const store = createStore(allReducers);
+//const store = createStore(allReducers);
 
 ReactDOM.render(
-    <Provider store={store} >
-        <App/>
-    </Provider>,
+    <App/>,
     document.getElementById('app')
 );
