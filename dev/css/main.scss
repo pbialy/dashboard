@@ -1,8 +1,35 @@
 div#mainDiv {
-    p {
-        color: red;
+    background-color: #FFFFFF;
+    border: solid 2px #979797;
+    width: 1000px;
+    height: 842px;
+    margin: 60px auto 60px auto;
+    overflow: hidden;
+}
+
+div.box {
+    width: 900px;
+    height: 300px;
+    margin: 20px auto 20px auto;
+    overflow: hidden;
+    border: solid 2px green;
+    div.boxHeader {
+        border-bottom: solid 2px blue;
+        height: 50px;
     }
-    h2 {
-        color: green;
+    div.boxBody {
+        height: 100%;
+        div.chart {
+            border: solid 2px saddlebrown;
+            float: left;
+            width: 80%;
+            height: 100%;
+        }
+        div.chartInfo {
+            border: solid 2px yellow;
+            float: right;
+            width: 19%;
+            height: 100%;
+        }
     }
 }
