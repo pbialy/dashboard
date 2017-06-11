@@ -29,7 +29,7 @@ div.box {
         */
         height: 40px;
         width: 43px;
-        border: solid 1px #DDDDDD;
+        border: solid 1px #C5C7C7;
         border-radius: 9px;
         background-color: #FFFFFF;
         margin: -10px auto 0px auto; }
@@ -40,7 +40,7 @@ div.box {
           */
           height: 34px;
           width: 37px;
-          border: solid 1px #DDDDDD;
+          border: solid 1px #C5C7C7;
           border-radius: 6px;
           background: linear-gradient(#FFFFFF, #D9EEFB);
           margin: 2px auto 0px auto; }
@@ -64,7 +64,7 @@ div.box {
       width: 20%;
       height: 100%; }
 
-/* hax */
+/* hax - space between columns in columnChart*/
 /*
 div#installations-container {
     g.raphael-group-226-columns,
@@ -76,5 +76,8 @@ div#installations-container {
     }
 }
 */
+/* hax - remove 'FusianCharts XT Trial' string*/
+g[class$="creditgroup"] {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */
