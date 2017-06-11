@@ -29,7 +29,8 @@ class LineChart extends React.Component {
                 "baseFontColor": "#014677",
                 "showAlternateHGridColor": "0",
                 "bgColor": "#ffffff",
-                "showBorder": "0",
+                "showBorder": "0"//,
+                //"startValue": "$"
             },
             "categories": [{
                 "category": [{
@@ -48,7 +49,7 @@ class LineChart extends React.Component {
                 "seriesname": "Net Comp",
                 "renderas": "line",
                 "showvalues": "0",
-                "color": "#e06c00",
+                "color": "#ED6E37",
                 "data": [{
                     "value": "620"
                 }, {
@@ -64,7 +65,7 @@ class LineChart extends React.Component {
                 "seriesname": "AnalyzerHR",
                 "renderas": "line",
                 "showvalues": "0",
-                "color": "#139300",
+                "color": "#259E01",
                 "data": [{
                     "value": "449"
                 }, {
@@ -80,7 +81,7 @@ class LineChart extends React.Component {
                 "seriesname": "Question Right",
                 "renderas": "line",
                 "showvalues": "0",
-                "color": "#0088ea",
+                "color": "#15A0C8",
                 "data": [{
                     "value": "293"
                 }, {
@@ -102,6 +103,7 @@ class LineChart extends React.Component {
             type: "msline",
             width: 720,
             height: 300,
+            //startValue: '$',
             dataFormat: "json",
             dataSource: myDataSource
         };

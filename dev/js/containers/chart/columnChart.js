@@ -12,122 +12,117 @@ class ColumnChart extends React.Component {
 
         const myDataSource = {
             "chart": {
-                "caption": "Machinery lifespan range",
-                "subcaption": "Means & standard deviations",
-                "xAxisName": "Systems",
-                "yAxisName": "Life Span",
-                "numberSuffix": " Years",
-                "halfErrorBar": "0",
-                "paletteColors": "#0075c2,#1aaf5d,#f2c500",
+                "subcaption": "Installations per day",
+                "xAxisName": "Week",
+                "yAxisName": "Installations",
+                "adjustDiv": "0",
+                "yAxisMinValue": "0",
+                "yAxisMaxvalue": "10",
+                "numDivLines": "1",
+                //"numberSuffix": " Years",
+                //"halfErrorBar": "0",
+                "paletteColors": "#ED6E37,#259E01,#15A0C8",
                 "showValues": "0",
-                "errorBarColor": "666666",
+                "captionAlignment": "right",
+                "subCaptionFontBold": "0",
+                "canvasPadding": "20",
+                "baseFontColor": "#014677",
+                //"errorBarColor": "666666",
                 "bgColor": "#ffffff",
                 "showBorder": "0",
                 "showCanvasBorder": "0",
                 "usePlotGradientColor": "0",
-                "showXAxisLine": "1",
-                "axisLineAlpha": "25",
-                "legendBorderAlpha": "0",
-                "legendShadow": "0",
-                "legendBgAlpha": "0",
-                "showShadow": "0",
+                //"showXAxisLine": "1",
+                //"axisLineAlpha": "25",
+                //"legendBorderAlpha": "0",
+                //"legendShadow": "0",
+                //"legendBgAlpha": "0",
+                //"showShadow": "0",
                 "showAlternateHgridColor": "0",
+                "plotSpacePercent": "80",
+                //"seriesSpacePercent": "80",
+                "showPlotBorder": "0",
                 "showHoverEffect": "1"
             },
             "categories": [
                 {
                     "category": [
                         {
-                            "label": "Central AC"
+                            "label": "48"
                         },
                         {
-                            "label": "Computers"
+                            "label": "49"
                         },
                         {
-                            "label": "Bar-code Scanners"
+                            "label": "50"
                         },
                         {
-                            "label": "Packaging Machines"
+                            "label": "51"
                         },
                         {
-                            "label": "Chilling Compartments"
+                            "label": "52"
                         }
                     ]
                 }
             ],
             "dataset": [
                 {
-                    "seriesname": "Daly City Serramonte",
+                    "seriesname": "Net Comp",
                     "data": [
                         {
-                            "value": "8",
-                            "errorvalue": "2"
+                            "value": "6"
                         },
                         {
-                            "value": "3",
-                            "errorvalue": "0.5"
+                            "value": "7"
                         },
                         {
-                            "value": "2",
-                            "errorvalue": "1"
+                            "value": "8"
                         },
                         {
-                            "value": "6",
-                            "errorvalue": "1.8"
+                            "value": "9"
                         },
                         {
-                            "value": "8",
-                            "errorvalue": "1.2"
+                            "value": "3"
                         }
                     ]
                 },
                 {
-                    "seriesname": "Bakersfield Central",
+                    "seriesname": "AnalyzerHR",
                     "data": [
                         {
-                            "value": "7",
-                            "errorvalue": "1"
+                            "value": "4"
                         },
                         {
-                            "value": "4",
-                            "errorvalue": "0.5"
+                            "value": "3"
                         },
                         {
-                            "value": "2",
-                            "errorvalue": "1"
+                            "value": "5"
                         },
                         {
-                            "value": "4",
-                            "errorvalue": "0.8"
+                            "value": "7"
                         },
                         {
-                            "value": "7",
-                            "errorvalue": "1"
+                            "value": "2"
                         }
                     ]
                 },
                 {
-                    "seriesname": "Garden Groove harbour",
+                    "seriesname": "Question Right",
                     "data": [
                         {
-                            "value": "9",
-                            "errorvalue": "2"
+                            "value": "3"
                         },
                         {
-                            "value": "3",
-                            "errorvalue": "0.7"
+                            "value": "1"
                         },
                         {
-                            "value": "3",
-                            "errorvalue": "1"
+                            "value": "2"
                         },
                         {
-                            "value": "6",
-                            "errorvalue": "1.8"
+                            "value": "2"
                         },
                         {
-                            "value": "7",
-                            "errorvalue": "1.2"
+                            "value": "1"
                         }
                     ]
                 }
@@ -137,7 +132,7 @@ class ColumnChart extends React.Component {
         const chartConfigs = {
             id: "installations",
             renderAt: "installations-container",
-            type: 'column2d',
+            type: 'mscolumn2d',
             width: 720,
             height: 300,
             dataFormat: "json",

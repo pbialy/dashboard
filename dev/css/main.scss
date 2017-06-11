@@ -12,13 +12,15 @@ div.box {
     height: 350px;
     margin: 20px auto 20px auto;
     overflow: hidden;
-    border: solid 2px green;
+    border: solid 1px #9CC6E1;
     div.boxHeader {
         height: 50px;
-        border-bottom: solid 2px saddlebrown;
+        border-bottom: solid 1px #9CC6E1;
+        background-color: #D9EEFB;
     }
     div.boxBody {
         height: 100%;
+        padding-top: 1px;
         div.chart {
             float: left;
             width: 80%;
