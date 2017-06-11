@@ -15,124 +15,91 @@ class Chart extends React.Component {
 
         var myDataSource = {
             "chart": {
-                "caption": "Actual Revenues, Targeted Revenues & Profits",
-                "subcaption": "Last year",
-                "xaxisname": "Month",
+                "subcaption": "Revenue per week",
+                "xaxisname": "Week",
                 "yaxisname": "Amount (In USD)",
-                "numberprefix": "$",
-                "theme": "ocean"
+                //"theme": "ocean",
+                //"theme": "fint",
+                "adjustDiv": "0",
+                "yAxisMinValue": "0",
+                "yAxisMaxvalue": "1000",
+                "numDivLines": "1",
+                //"showBorder": "0",
+                //"canvasBgColor": "#ffffff",
+                "showCanvasBorder": "0",
+                "captionAlignment": "right",
+                "subCaptionFontBold": "0",
+                "canvasPadding": "20",
+                //"labelFontColor": "#014677",
+                "formatNumberScale": "0",
+                "thousandSeparator": " ",
+                "lineThickness": "5",
+                "baseFontColor": "#014677",
+                //"showShadow": "0",
+                //"canvasBgColor": "#ffffff",
+                //"canvasBorderAlpha": "0",
+                "showAlternateHGridColor": "0"
             },
             "categories": [{
                 "category": [{
-                    "label": "Jan"
+                    "label": "48"
                 }, {
-                    "label": "Feb"
+                    "label": "49"
                 }, {
-                    "label": "Mar"
+                    "label": "50"
                 }, {
-                    "label": "Apr"
+                    "label": "51"
                 }, {
-                    "label": "May"
-                }, {
-                    "label": "Jun"
-                }, {
-                    "label": "Jul"
-                }, {
-                    "label": "Aug"
-                }, {
-                    "label": "Sep"
-                }, {
-                    "label": "Oct"
-                }, {
-                    "label": "Nov"
-                }, {
-                    "label": "Dec"
+                    "label": "52"
                 }]
             }],
             "dataset": [{
-                "seriesname": "Actual Revenue",
-                "data": [{
-                    "value": "16000"
-                }, {
-                    "value": "20000"
-                }, {
-                    "value": "18000"
-                }, {
-                    "value": "19000"
-                }, {
-                    "value": "15000"
-                }, {
-                    "value": "21000"
-                }, {
-                    "value": "16000"
-                }, {
-                    "value": "20000"
-                }, {
-                    "value": "17000"
-                }, {
-                    "value": "25000"
-                }, {
-                    "value": "19000"
-                }, {
-                    "value": "23000"
-                }]
-            }, {
-                "seriesname": "Projected Revenue",
+                "seriesname": "Net Comp",
                 "renderas": "line",
                 "showvalues": "0",
+                "color": "#e06c00",
                 "data": [{
-                    "value": "15000"
+                    "value": "620"
                 }, {
-                    "value": "16000"
+                    "value": "721"
                 }, {
-                    "value": "17000"
+                    "value": "856"
                 }, {
-                    "value": "18000"
+                    "value": "911"
                 }, {
-                    "value": "19000"
-                }, {
-                    "value": "19000"
-                }, {
-                    "value": "19000"
-                }, {
-                    "value": "19000"
-                }, {
-                    "value": "20000"
-                }, {
-                    "value": "21000"
-                }, {
-                    "value": "22000"
-                }, {
-                    "value": "23000"
+                    "value": "285"
                 }]
             }, {
-                "seriesname": "Profit",
-                "renderas": "area",
+                "seriesname": "AnalyzerHR",
+                "renderas": "line",
                 "showvalues": "0",
+                "color": "#139300",
                 "data": [{
-                    "value": "4000"
+                    "value": "449"
                 }, {
-                    "value": "5000"
+                    "value": "451"
                 }, {
-                    "value": "3000"
+                    "value": "511"
                 }, {
-                    "value": "4000"
+                    "value": "697"
                 }, {
-                    "value": "1000"
+                    "value": "153"
+                }]
+            }, {
+                "seriesname": "Question Right",
+                "renderas": "line",
+                "showvalues": "0",
+                "color": "#0088ea",
+                "data": [{
+                    "value": "293"
                 }, {
-                    "value": "7000"
+                    "value": "148"
                 }, {
-                    "value": "1000"
+                    "value": "266"
                 }, {
-                    "value": "4000"
+                    "value": "261"
                 }, {
-                    "value": "1000"
-                }, {
-                    "value": "8000"
-                }, {
-                    "value": "2000"
-                }, {
-                    "value": "7000"
+                    "value": "23"
                 }]
             }]
         };
@@ -140,8 +107,9 @@ class Chart extends React.Component {
         var chartConfigs = {
             id: "revenue-profits-chart",
             renderAt: "revenue-profits-chart-container",
-            type: "mscombi2d",
-            width: 720,
+            //type: "mscombi2d",
+            type: "msline",
+            width: 600,
             height: 250,
             dataFormat: "json",
             dataSource: myDataSource
