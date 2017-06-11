@@ -97,17 +97,11 @@ div.box {
           box-shadow: 0 2px 5px 1px #BFBFBF; }
 
 /* hax - space between columns in columnChart*/
-/*
-div#installations-container {
-    g.raphael-group-226-columns,
-    g.raphael-group-233-columns,
-    g.raphael-group-240-columns {
-        rect {
-            width: 4px;
-        }
-    }
-}
-*/
+div#installations-container g.raphael-group-226-columns rect,
+div#installations-container g.raphael-group-233-columns rect,
+div#installations-container g.raphael-group-240-columns rect {
+  width: 8px; }
+
 /* hax - remove 'FusianCharts XT Trial' string*/
 g[class$="creditgroup"] {
   display: none; }

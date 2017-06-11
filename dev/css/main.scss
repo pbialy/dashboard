@@ -116,17 +116,17 @@ div.box {
 }
 
 /* hax - space between columns in columnChart*/
-/*
+
 div#installations-container {
     g.raphael-group-226-columns,
     g.raphael-group-233-columns,
     g.raphael-group-240-columns {
         rect {
-            width: 4px;
+            width: 8px;
         }
     }
 }
-*/
+
 
 /* hax - remove 'FusianCharts XT Trial' string*/
 g[class$="creditgroup"] {

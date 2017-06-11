@@ -13,6 +13,7 @@ class LineChart extends React.Component {
         const myDataSource = {
             "chart": {
                 "subcaption": "Revenue per week",
+                "subCaptionFontColor": "#000000",
                 "xaxisname": "Week",
                 "yaxisname": "Amount (In USD)",
                 "adjustDiv": "0",
@@ -28,7 +29,7 @@ class LineChart extends React.Component {
                 "lineThickness": "5",
                 "baseFontColor": "#014677",
                 "showAlternateHGridColor": "0",
-                "bgColor": "#ffffff",
+                "bgColor": "#FFFFFF",
                 "showBorder": "0"//,
                 //"startValue": "$"
             },

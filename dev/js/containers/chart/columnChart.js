@@ -13,6 +13,7 @@ class ColumnChart extends React.Component {
         const myDataSource = {
             "chart": {
                 "subcaption": "Installations per day",
+                "subCaptionFontColor": "#000000",
                 "xAxisName": "Week",
                 "yAxisName": "Installations",
                 "adjustDiv": "0",
@@ -30,9 +31,9 @@ class ColumnChart extends React.Component {
                 "showCanvasBorder": "0",
                 "usePlotGradientColor": "0",
                 "showAlternateHgridColor": "0",
-                "plotSpacePercent": "80",
+                "plotSpacePercent": "60",
                 "showPlotBorder": "0",
-                //"lineThickness": "11",
+                "numVisiblePlot": "20",
                 "showHoverEffect": "1"
             },
             "categories": [
