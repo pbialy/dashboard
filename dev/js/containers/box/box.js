@@ -10,7 +10,7 @@ class Box extends React.Component {
         return (
             <div className="box">
                 <BoxHeader />
-                <BoxBody />
+                <BoxBody myType={this.props.myType} />
             </div>
         )
     }

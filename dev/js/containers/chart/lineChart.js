@@ -10,7 +10,7 @@ charts(FusionCharts);
 class LineChart extends React.Component {
     render() {
 
-        var myDataSource = {
+        const myDataSource = {
             "chart": {
                 "subcaption": "Revenue per week",
                 "xaxisname": "Week",
@@ -95,7 +95,7 @@ class LineChart extends React.Component {
             }]
         };
 
-        var chartConfigs = {
+        const chartConfigs = {
             //Revenue by Solution
             id: "revenue-by-solution",
             renderAt: "revenue-by-solution-container",
@@ -105,9 +105,6 @@ class LineChart extends React.Component {
             dataFormat: "json",
             dataSource: myDataSource
         };
-
-
-
 
         return (
             <div className="chart">

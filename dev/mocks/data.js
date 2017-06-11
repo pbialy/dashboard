@@ -125,6 +125,8 @@ var myDataSource = {
 
 const data = {
     boxes: [{
+        chartType: 'line',
+        TODO_DELETEME_otherChartType: 'column',
         symbol: '$',
         headerText: 'Revenue by Solution',
         displayMode: 'chart',

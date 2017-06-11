@@ -6,9 +6,11 @@ import Box from '~/js/containers/box/box.js';
 
 class App extends React.Component {
     render() {
+        // TODO get data here and make loop over boxes, pass some id so box can get data later
         return (
             <div id="mainDiv">
-                <Box />
+                <Box myType="line" />
+                <Box myType="column" />
             </div>
         );
     }
