@@ -8,12 +8,12 @@ div#mainDiv {
 
 div.box {
   width: 900px;
-  height: 350px;
+  height: 340px;
   margin: 30px auto 50px auto;
   border: solid 1px #9CC6E1;
   padding-bottom: 3px; }
   div.box div.boxHeader {
-    height: 50px;
+    height: 38px;
     border-bottom: solid 1px #9CC6E1;
     background-color: #D9EEFB;
     color: #05415B; }
@@ -52,6 +52,11 @@ div.box {
       float: right;
       width: 90%;
       height: 100%; }
+      div.box div.boxHeader div.boxHeaderTitle div.titleText {
+        font-size: 18px;
+        font-family: Arial;
+        font-weight: bold;
+        margin-top: 8px; }
   div.box div.boxBody {
     height: 100%;
     padding: 1px; }

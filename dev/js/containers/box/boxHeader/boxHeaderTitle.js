@@ -6,7 +6,9 @@ class BoxHeaderTitle extends React.Component {
     render() {
         return (
             <div className="boxHeaderTitle">
-                boxHeaderTitle
+                <div className="titleText">
+                    Revenue by Solution
+                </div>
             </div>
         )
     }
