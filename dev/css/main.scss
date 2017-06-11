@@ -10,11 +10,12 @@ div#mainDiv {
 div.box {
     width: 900px;
     height: 340px;
-    margin: 30px auto 50px auto;
+    margin: 30px auto 40px auto;
     border: solid 1px #9CC6E1;
     padding-bottom: 3px;
+
     div.boxHeader {
-        height: 38px;
+        height: 12%;
         border-bottom: solid 1px #9CC6E1;
         background-color: #D9EEFB;
         color: #05415B;
@@ -24,10 +25,6 @@ div.box {
             height: 100%;
             text-align: center;
             div.symbolOuterDiv {
-                /* other possible vals:
-                AAAheight: 38px;
-                AAAwidth: 40px;
-                */
                 height: 40px;
                 width: 43px;
                 border: solid 1px #C5C7C7;
@@ -35,10 +32,6 @@ div.box {
                 background-color: #FFFFFF;
                 margin: -10px auto 0px auto;
                 div.symbolInnerDiv {
-                    /* other possible vals:
-                    AAAheight: 32px;
-                    AAAwidth: 34px;
-                    */
                     height: 34px;
                     width: 37px;
                     border: solid 1px #C5C7C7;
@@ -65,8 +58,9 @@ div.box {
             }
         }
     }
+
     div.boxBody {
-        height: 100%;
+        height: 88%;
         padding: 1px;
         div.chart {
             float: left;
@@ -77,6 +71,46 @@ div.box {
             float: right;
             width: 20%;
             height: 100%;
+            position: relative;
+            div.chartInfoTotal {
+                height: 75%;
+                width: 100%;
+            }
+            div.chartInfoButton {
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                height: 25%;
+                width: 100%;
+                button.changeButton {
+                    background: #FFFFFF;
+                    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#1EBCEA), to(#046C8A));
+                    background: -moz-linear-gradient(#1EBCEA, #046C8A);
+                    background: linear-gradient(#1EBCEA, #046C8A);
+                    border: solid 2px #FFFFFF;
+                    border-top: 0px;
+                    color: #FFFFFF;
+                    box-shadow: 0 3px 5px 1px #BFBFBF;
+                    border-radius: 6px;
+                    width: 80%;
+                    height: 40%;
+                    font-size: 14px;
+                    outline: none;
+                }
+                button.changeButton:hover {
+                    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#046C8A), to(#1EBCEA));
+                    background: -moz-linear-gradient(#046C8A, #1EBCEA);
+                    background: linear-gradient(#046C8A, #1EBCEA);
+                }
+                button.changeButton:active {
+                    border: 0px;
+                    margin-top: 2px;
+                    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#095D75), to(#1AA4CC));
+                    background: -moz-linear-gradient(#095D75, #1AA4CC);
+                    background: linear-gradient(#095D75, #1AA4CC);
+                    box-shadow: 0 2px 5px 1px #BFBFBF;
+                }
+            }
         }
     }
 }

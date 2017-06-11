@@ -1,12 +1,14 @@
 import React from 'react';
-import {bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
+
+import ChartInfoTotal from '~/js/containers/chart/chartInfo/chartInfoTotal.js';
+import ChartInfoButton from '~/js/containers/chart/chartInfo/chartInfoButton.js';
 
 class ChartInfo extends React.Component {
     render() {
         return (
             <div className="chartInfo">
-                ChartInfo
+                <ChartInfoTotal />
+                <ChartInfoButton />
             </div>
         )
     }
