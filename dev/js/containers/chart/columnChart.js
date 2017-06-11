@@ -9,6 +9,8 @@ charts(FusionCharts);
 
 class ColumnChart extends React.Component {
     render() {
+        // check link below
+        // http://www.fusioncharts.com/dev/chart-attributes.html?chart=errorbar2d
         return (
             <div className="chart">
                 {/* <ReactFC {...chartConfigs} /> */}
