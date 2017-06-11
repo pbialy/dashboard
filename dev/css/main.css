@@ -9,16 +9,52 @@ div#mainDiv {
 div.box {
   width: 900px;
   height: 350px;
-  margin: 20px auto 20px auto;
-  overflow: hidden;
-  border: solid 1px #9CC6E1; }
+  margin: 30px auto 50px auto;
+  border: solid 1px #9CC6E1;
+  padding-bottom: 3px; }
   div.box div.boxHeader {
     height: 50px;
     border-bottom: solid 1px #9CC6E1;
-    background-color: #D9EEFB; }
+    background-color: #D9EEFB;
+    color: #05415B; }
+    div.box div.boxHeader div.boxHeaderSymbol {
+      float: left;
+      width: 10%;
+      height: 100%;
+      text-align: center; }
+      div.box div.boxHeader div.boxHeaderSymbol div.symbolOuterDiv {
+        /* other possible vals:
+        AAAheight: 38px;
+        AAAwidth: 40px;
+        */
+        height: 40px;
+        width: 43px;
+        border: solid 1px #DDDDDD;
+        border-radius: 9px;
+        background-color: #FFFFFF;
+        margin: -10px auto 0px auto; }
+        div.box div.boxHeader div.boxHeaderSymbol div.symbolOuterDiv div.symbolInnerDiv {
+          /* other possible vals:
+          AAAheight: 32px;
+          AAAwidth: 34px;
+          */
+          height: 34px;
+          width: 37px;
+          border: solid 1px #DDDDDD;
+          border-radius: 6px;
+          background: linear-gradient(#FFFFFF, #D9EEFB);
+          margin: 2px auto 0px auto; }
+          div.box div.boxHeader div.boxHeaderSymbol div.symbolOuterDiv div.symbolInnerDiv div.symbolSign {
+            margin: 0px auto 0px auto;
+            font-size: 28px;
+            font-weight: bold; }
+    div.box div.boxHeader div.boxHeaderTitle {
+      float: right;
+      width: 90%;
+      height: 100%; }
   div.box div.boxBody {
     height: 100%;
-    padding-top: 1px; }
+    padding: 1px; }
     div.box div.boxBody div.chart {
       float: left;
       width: 80%;
@@ -27,5 +63,18 @@ div.box {
       float: right;
       width: 20%;
       height: 100%; }
+
+/* hax */
+/*
+div#installations-container {
+    g.raphael-group-226-columns,
+    g.raphael-group-233-columns,
+    g.raphael-group-240-columns {
+        rect {
+            width: 4px;
+        }
+    }
+}
+*/
 
 /*# sourceMappingURL=main.css.map */

@@ -19,29 +19,20 @@ class ColumnChart extends React.Component {
                 "yAxisMinValue": "0",
                 "yAxisMaxvalue": "10",
                 "numDivLines": "1",
-                //"numberSuffix": " Years",
-                //"halfErrorBar": "0",
                 "paletteColors": "#ED6E37,#259E01,#15A0C8",
                 "showValues": "0",
                 "captionAlignment": "right",
                 "subCaptionFontBold": "0",
                 "canvasPadding": "20",
                 "baseFontColor": "#014677",
-                //"errorBarColor": "666666",
                 "bgColor": "#ffffff",
                 "showBorder": "0",
                 "showCanvasBorder": "0",
                 "usePlotGradientColor": "0",
-                //"showXAxisLine": "1",
-                //"axisLineAlpha": "25",
-                //"legendBorderAlpha": "0",
-                //"legendShadow": "0",
-                //"legendBgAlpha": "0",
-                //"showShadow": "0",
                 "showAlternateHgridColor": "0",
                 "plotSpacePercent": "80",
-                //"seriesSpacePercent": "80",
                 "showPlotBorder": "0",
+                //"lineThickness": "11",
                 "showHoverEffect": "1"
             },
             "categories": [
@@ -129,6 +120,8 @@ class ColumnChart extends React.Component {
             ]
         };
 
+        // there are 63 installations in total and sample pic shows 136... TODO
+
         const chartConfigs = {
             id: "installations",
             renderAt: "installations-container",
@@ -139,8 +132,6 @@ class ColumnChart extends React.Component {
             dataSource: myDataSource
         };
 
-        // check link below
-        // http://www.fusioncharts.com/dev/chart-attributes.html?chart=errorbar2d
         return (
             <div className="chart">
                 <ReactFC {...chartConfigs} />
