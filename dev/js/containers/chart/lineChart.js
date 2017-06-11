@@ -3,14 +3,11 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 import fusioncharts from 'fusioncharts';
-// Load the charts module
 import charts from 'fusioncharts/fusioncharts.charts';
 import ReactFC from 'react-fusioncharts';
+charts(FusionCharts);
 
-// Pass fusioncharts as a dependency of charts
-charts(FusionCharts)
-
-class Chart extends React.Component {
+class LineChart extends React.Component {
     render() {
 
         var myDataSource = {
@@ -18,27 +15,21 @@ class Chart extends React.Component {
                 "subcaption": "Revenue per week",
                 "xaxisname": "Week",
                 "yaxisname": "Amount (In USD)",
-                //"theme": "ocean",
-                //"theme": "fint",
                 "adjustDiv": "0",
                 "yAxisMinValue": "0",
                 "yAxisMaxvalue": "1000",
                 "numDivLines": "1",
-                //"showBorder": "0",
-                //"canvasBgColor": "#ffffff",
                 "showCanvasBorder": "0",
                 "captionAlignment": "right",
                 "subCaptionFontBold": "0",
                 "canvasPadding": "20",
-                //"labelFontColor": "#014677",
                 "formatNumberScale": "0",
                 "thousandSeparator": " ",
                 "lineThickness": "5",
                 "baseFontColor": "#014677",
-                //"showShadow": "0",
-                //"canvasBgColor": "#ffffff",
-                //"canvasBorderAlpha": "0",
-                "showAlternateHGridColor": "0"
+                "showAlternateHGridColor": "0",
+                "bgColor": "#ffffff",
+                "showBorder": "0",
             },
             "categories": [{
                 "category": [{
@@ -105,12 +96,12 @@ class Chart extends React.Component {
         };
 
         var chartConfigs = {
-            id: "revenue-profits-chart",
-            renderAt: "revenue-profits-chart-container",
-            //type: "mscombi2d",
+            //Revenue by Solution
+            id: "revenue-by-solution",
+            renderAt: "revenue-by-solution-container",
             type: "msline",
-            width: 600,
-            height: 250,
+            width: 720,
+            height: 300,
             dataFormat: "json",
             dataSource: myDataSource
         };
@@ -126,4 +117,4 @@ class Chart extends React.Component {
     }
 }
 
-export default Chart;
+export default LineChart;
