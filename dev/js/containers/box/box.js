@@ -1,16 +1,15 @@
 import React from 'react';
-import {bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
 
 import BoxHeader from '~/js/containers/box/boxHeader.js';
 import BoxBody from '~/js/containers/box/boxBody.js';
 
 class Box extends React.Component {
     render() {
+        const { chartType, symbol, headerText, chartData, chartInfo} = this.props.boxData;
         return (
             <div className="box">
-                <BoxHeader />
-                <BoxBody myType={this.props.myType} />
+                <BoxHeader symbol={symbol} headerText={headerText} />
+                <BoxBody chartType={chartType} chartData={chartData} chartInfo={chartInfo} />
             </div>
         )
     }

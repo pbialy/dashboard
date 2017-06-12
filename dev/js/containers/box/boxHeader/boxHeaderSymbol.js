@@ -1,6 +1,4 @@
 import React from 'react';
-import {bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
 
 class BoxHeaderSymbol extends React.Component {
     render() {
@@ -8,7 +6,7 @@ class BoxHeaderSymbol extends React.Component {
             <div className="boxHeaderSymbol">
                 <div className="symbolOuterDiv">
                     <div className="symbolInnerDiv">
-                        <div className="symbolSign">$</div>
+                        <div className="symbolSign">{this.props.symbol}</div>
                     </div>
                 </div>
             </div>

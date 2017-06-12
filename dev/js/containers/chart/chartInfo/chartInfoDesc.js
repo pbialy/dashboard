@@ -4,7 +4,7 @@ class ChartInfoDesc extends React.Component {
     render() {
         return (
             <div className="chartInfoDesc">
-                Revenue Stream
+                {this.props.description}
             </div>
         )
     }

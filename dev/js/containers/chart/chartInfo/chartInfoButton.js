@@ -5,7 +5,7 @@ class ChartInfoButton extends React.Component {
         return (
             <div className="chartInfoButton">
                 <button className="changeButton" onClick={() => (console.log('not implemented yet'))}>
-                    Revenue Analysis
+                    {this.props.buttonText}
                 </button>
             </div>
         )

@@ -1,26 +1,21 @@
 import React from 'react';
-import {connect} from 'react-redux';
 
 import Box from '~/js/containers/box/box.js';
 
+import charts from 'fusioncharts/fusioncharts.charts';
+charts(FusionCharts);
 
 class App extends React.Component {
     render() {
-        // TODO get data here and make loop over boxes, pass some id so box can get data later
+        const { boxes } = this.props.data;
         return (
             <div id="mainDiv">
-                <Box myType="line" />
-                <Box myType="column" />
+            {boxes.map((box, key) => (
+                <Box key={key} boxData={box} />
+            ))}
             </div>
         );
     }
 }
-function mapStateToProps(state) {
-    return {
-        //displayMode: state.displayMode
-    }
-}
-
-//export default connect(mapStateToProps)(App);
 
 export default App;

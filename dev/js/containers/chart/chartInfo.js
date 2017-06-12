@@ -5,10 +5,11 @@ import ChartInfoButton from '~/js/containers/chart/chartInfo/chartInfoButton.js'
 
 class ChartInfo extends React.Component {
     render() {
+        const { total, buttonText } = this.props.chartInfo;
         return (
             <div className="chartInfo">
-                <ChartInfoTotal />
-                <ChartInfoButton />
+                <ChartInfoTotal total={total} />
+                <ChartInfoButton buttonText={buttonText} />
             </div>
         )
     }

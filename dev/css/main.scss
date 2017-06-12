@@ -80,6 +80,8 @@ div.box {
                 margin-top: 30px;
                 margin-right: 18px;
                 font-family: arial;
+                height: 60px;
+                position: relative;
                 div.chartInfoCurr {
                     float: right;
                     color: #2F6CA6;
@@ -95,9 +97,12 @@ div.box {
                     color: #05415B;
                 }
                 div.chartInfoDesc {
-                    float: right;
                     font-size: 14px;
                     color: #215E8A;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    text-align: right;
                 }
             }
             div.chartInfoButton {

@@ -1,13 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.jsx';
-import { createStore } from 'redux';
-import allReducers from '~/js/reducers/index.js';
-import { Provider } from 'react-redux';
 
-//const store = createStore(allReducers);
+import data from '~/mocks/data.js'
 
 ReactDOM.render(
-    <App/>,
+    <App data={data} />,
     document.getElementById('app')
 );

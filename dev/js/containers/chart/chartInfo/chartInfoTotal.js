@@ -7,12 +7,14 @@ import ChartInfoDesc from '~/js/containers/chart/chartInfo/chartInfoDesc.js';
 
 class ChartInfoTotal extends React.Component {
     render() {
+        const { value, currency, description } = this.props.total;
         return (
             <div className="chartInfoTotal">
-                <ChartInfoValue />
-                <ChartInfoCurr />
-                <br/>
-                <ChartInfoDesc />
+                <div className="chartInfoValAndCurr">
+                    <ChartInfoValue value={value} />
+                    {currency && (<ChartInfoCurr currency={currency} />)}
+                </div>
+                <ChartInfoDesc description={description} />
             </div>
         )
     }
