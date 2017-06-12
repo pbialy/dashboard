@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Box from '~/js/containers/box/box.js';
+import Box from '~/js/components/box/box.js';
 
 import charts from 'fusioncharts/fusioncharts.charts';
 charts(FusionCharts);

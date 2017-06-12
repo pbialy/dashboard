@@ -1,21 +1,21 @@
 import React from 'react';
 import ReactFC from 'react-fusioncharts';
 
-import { lineChartSettings } from '~/css/chartsSettings.js';
+import { columnChartSettings } from '~/js/chartsSettings.js';
 
-class LineChart extends React.Component {
+class ColumnChart extends React.Component {
     render() {
         const chartData = this.props.chartData;
 
         const myDataSource = {
-            chart: lineChartSettings.dataSourceChartField,
+            chart: columnChartSettings.dataSourceChartField,
             categories: chartData.categories,
             dataset: chartData.dataset
         };
 
         const chartConfigs = Object.assign(
             {dataSource: myDataSource},
-            lineChartSettings.chartConfigs
+            columnChartSettings.chartConfigs
         );
 
         return (
@@ -26,4 +26,4 @@ class LineChart extends React.Component {
     }
 }
 
-export default LineChart;
+export default ColumnChart;

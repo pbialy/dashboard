@@ -1,7 +1,7 @@
 import React from 'react';
 
-import BoxHeader from '~/js/containers/box/boxHeader.js';
-import BoxBody from '~/js/containers/box/boxBody.js';
+import BoxHeader from '~/js/components/box/boxHeader.js';
+import BoxBody from '~/js/components/box/boxBody.js';
 
 class Box extends React.Component {
     render() {

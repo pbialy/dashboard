@@ -1,8 +1,8 @@
 import React from 'react';
 
-import LineChart from '~/js/containers/chart/lineChart.js';
-import ColumnChart from '~/js/containers/chart/columnChart.js';
-import ChartInfo from '~/js/containers/chart/chartInfo.js';
+import LineChart from '~/js/components/chart/lineChart.js';
+import ColumnChart from '~/js/components/chart/columnChart.js';
+import ChartInfo from '~/js/components/chart/chartInfo.js';
 
 class BoxBody extends React.Component {
     render() {

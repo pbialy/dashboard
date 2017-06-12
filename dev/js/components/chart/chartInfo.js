@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ChartInfoTotal from '~/js/containers/chart/chartInfo/chartInfoTotal.js';
-import ChartInfoButton from '~/js/containers/chart/chartInfo/chartInfoButton.js';
+import ChartInfoTotal from '~/js/components/chart/chartInfo/chartInfoTotal.js';
+import ChartInfoButton from '~/js/components/chart/chartInfo/chartInfoButton.js';
 
 class ChartInfo extends React.Component {
     render() {
