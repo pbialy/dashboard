@@ -1,3 +1,7 @@
+body {
+    background-color: #CCCCCC;
+}
+
 div#mainDiv {
     background-color: #FFFFFF;
     border: solid 2px #979797;
@@ -73,8 +77,28 @@ div.box {
             height: 100%;
             position: relative;
             div.chartInfoTotal {
-                height: 75%;
-                width: 100%;
+                margin-top: 30px;
+                margin-right: 18px;
+                font-family: arial;
+                div.chartInfoCurr {
+                    float: right;
+                    color: #2F6CA6;
+                    font-size: 22px;
+                    font-family: fantasy;
+                    margin-top: 5px;
+                    margin-right: 2px;
+                }
+                div.chartInfoValue {
+                    float: right;
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: #05415B;
+                }
+                div.chartInfoDesc {
+                    float: right;
+                    font-size: 14px;
+                    color: #215E8A;
+                }
             }
             div.chartInfoButton {
                 text-align: center;
@@ -88,7 +112,7 @@ div.box {
                     background: -moz-linear-gradient(#1EBCEA, #046C8A);
                     background: linear-gradient(#1EBCEA, #046C8A);
                     border: solid 2px #FFFFFF;
-                    border-top: 0px;
+                    border-top: 0;
                     color: #FFFFFF;
                     box-shadow: 0 3px 5px 1px #BFBFBF;
                     border-radius: 6px;
@@ -103,7 +127,7 @@ div.box {
                     background: linear-gradient(#046C8A, #1EBCEA);
                 }
                 button.changeButton:active {
-                    border: 0px;
+                    border: 0;
                     margin-top: 2px;
                     background: -webkit-gradient(linear, 0 0, 0 bottom, from(#095D75), to(#1AA4CC));
                     background: -moz-linear-gradient(#095D75, #1AA4CC);
@@ -116,7 +140,7 @@ div.box {
 }
 
 /* hax - space between columns in columnChart*/
-
+/*
 div#installations-container {
     g.raphael-group-226-columns,
     g.raphael-group-233-columns,
@@ -126,7 +150,7 @@ div#installations-container {
         }
     }
 }
-
+*/
 
 /* hax - remove 'FusianCharts XT Trial' string*/
 g[class$="creditgroup"] {
